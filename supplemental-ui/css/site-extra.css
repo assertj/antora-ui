@@ -1,0 +1,39 @@
+.navbar {
+    background: #e7ce8e;
+}
+.navbar-brand .title {
+    font-weight: 600;
+}
+.navbar-brand .logo {
+    height: 1.5em;
+    padding-right: .5em;
+}
+
+.navbar-item svg {
+    height: 20px;
+    width: 20px;
+    margin-right: .5ex;
+}
+.navbar-end .navbar-link,
+.navbar-end>.navbar-item,
+.navbar-end .navbar-item.has-dropdown:hover .navbar-link,
+.navbar-end .navbar-link:hover,
+.navbar-end>a.navbar-item:hover,
+.navbar-brand .navbar-item {
+    color: black;
+}
+
+.navbar-end .navbar-item.has-dropdown:hover .navbar-link,
+.navbar-end .navbar-link:hover,
+.navbar-end>a.navbar-item:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.version-banner {
+    color: #856404;
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    font-size: .88889rem;
+    padding: 1rem 1rem .75rem;
+    margin: 1.5rem 0;
+}

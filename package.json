@@ -1,0 +1,6 @@
+{
+  "name": "assertj-antora-ui",
+  "dependencies": {
+    "@asciidoctor/tabs": "1.0.0-beta.6"
+  }
+}
