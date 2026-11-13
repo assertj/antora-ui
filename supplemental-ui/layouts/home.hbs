@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+{{> head defaultPageTitle='Untitled'}}
+  </head>
+  <body class="article home">
+{{> header}}
+<div class="body">
+<main class="article">
+{{!-- empty: the UI script measures the toolbar when jumping to an anchor --}}
+<div class="toolbar"></div>
+  <div class="content">
+<article class="doc">
+{{#with page.title}}
+<h1 class="page">{{{this}}}</h1>
+{{/with}}
+{{{page.contents}}}
+<div class="tiles">
+{{#each site.components}}
+{{#if (ne ./name @root.page.component.name)}}
+<a class="tile" href="{{{relativize ./url}}}">
+<span class="tile-title">{{{./title}}}</span>
+{{#with (lookup @root.page.attributes ./name)}}
+<span class="tile-description">{{{this}}}</span>
+{{/with}}
+</a>
+{{/if}}
+{{/each}}
+</div>
+</article>
+  </div>
+</main>
+</div>
+{{> footer}}
+  </body>
+</html>

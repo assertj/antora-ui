@@ -55,3 +55,51 @@
 .hljs-doctag {
   color: inherit;
 }
+
+/* Component tiles of the home layout */
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.doc .tile {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.25rem;
+  border: 1px solid #e1e1e1;
+  border-radius: .25rem;
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.doc .tile:hover,
+.doc .tile:focus {
+  border-color: #e7ce8e;
+  background: #fdf9ee;
+}
+
+.tile-description {
+  margin-top: .5rem;
+  color: #5d5d5d;
+  font-size: .88889rem;
+  font-weight: normal;
+}
+
+.home .toolbar {
+  height: 0;
+  box-shadow: none;
+}
+
+/* Keep the footer at the bottom of the window on a short home page */
+body.home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.home .body {
+  flex: auto;
+}
