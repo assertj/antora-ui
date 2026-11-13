@@ -36,3 +36,22 @@
     padding: 1rem 1rem .75rem;
     margin: 1.5rem 0;
 }
+
+/* Restore railscasts theme colours that are overidden default UI */
+.doc pre.highlight > code.hljs {
+  background: #232323;
+  box-shadow: none;
+}
+
+.hljs-class .hljs-title {
+  color: #ffc66d;
+}
+
+.hljs-tag .hljs-attr {
+  color: #6d9cbe;
+}
+
+.hljs-literal,
+.hljs-doctag {
+  color: inherit;
+}
