@@ -16,22 +16,15 @@
 }
 
 .navbar,
-.navbar-end .navbar-link,
-.navbar-end>.navbar-item,
-.navbar-end .navbar-item.has-dropdown:hover .navbar-link,
-.navbar-end .navbar-link:hover,
-.navbar-end>a.navbar-item:hover,
 .navbar-brand .navbar-item {
     color: black;
 }
 
-.navbar-burger span {
-    background-color: black;
+.navbar-brand>a.navbar-item:last-child {
+    margin-left: auto;
 }
 
-.navbar-end .navbar-item.has-dropdown:hover .navbar-link,
-.navbar-end .navbar-link:hover,
-.navbar-end>a.navbar-item:hover {
+.navbar-brand>a.navbar-item:last-child:hover {
     background: rgba(0, 0, 0, 0.1);
 }
 
