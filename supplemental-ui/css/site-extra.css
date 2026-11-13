@@ -14,6 +14,8 @@
     width: 20px;
     margin-right: .5ex;
 }
+
+.navbar,
 .navbar-end .navbar-link,
 .navbar-end>.navbar-item,
 .navbar-end .navbar-item.has-dropdown:hover .navbar-link,
@@ -21,6 +23,10 @@
 .navbar-end>a.navbar-item:hover,
 .navbar-brand .navbar-item {
     color: black;
+}
+
+.navbar-burger span {
+    background-color: black;
 }
 
 .navbar-end .navbar-item.has-dropdown:hover .navbar-link,
